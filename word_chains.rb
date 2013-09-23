@@ -1,6 +1,6 @@
 class WordChains
   attr_reader :dictionary
-
+  # delete this comment
   def initialize
     @dictionary = File.readlines("dictionary.txt").map(&:chomp).select { |item| !item.nil? }
     @visited_words = []
